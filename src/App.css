@@ -1,38 +1,117 @@
 .App {
   text-align: center;
+  width: 100%;
+  background-color: #05292E;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App>img{
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App > div > input{
+  background-color: #062226;
   color: white;
+  border: none;
+  font-weight: 700;
+  width: 68%;
+  height: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.App > div > button{
+  background-color: #062226;
+  color:white;
+  border: none;
+  height: 2.1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav{
+  display: flex;
+  color: white;
+  background-color: #062226;
+  justify-content:space-around;
+  width: 70%;
+  margin: auto;
+  margin-top: 2rem;
+  line-height: 1.5rem;
+  padding: 1rem;
+}
+
+.nav > h4 > p{
+  font-size: 1.5rem;
+  margin-top: 0%;
+}
+
+.Cards{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Card{
+  background-color: #062226;
+  border-radius: 5px;
+  color: white;
+  text-align: left;
+  margin: .5rem;
+  width: 35%;
+  overflow: visible;
+}
+
+.Card>img{
+  border-radius: 5px 5px 0px 0px;
+  width: 100%;
+}
+
+.Card>span{
+  position: absolute;
+  background-color: #062226;
+  margin-top: 1.5rem;
+  border-radius: 0rem .5rem .5rem 0rem;
+  padding: .3rem;
+  width: 6rem;
+}
+
+.info{
+  padding: 0rem 1rem 2rem 1rem ;
+}
+
+.info>h3{
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37.5px;
+}
+
+.info>h3{
+  border-bottom: 0.5px solid #084851;
+}
+
+.info>h6>p{
+  font-family: 'roboto';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.9px;
+  color:#7E7E7E;
+}
+
+h6{
+  font-family: 'roboto';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.13px;
+  margin: 0px;
+}
+
+.unknown {
+  color: gray;
+}
+
+.Alive{
+  color: green;
+}
+
+.Dead{
+  color: red;
 }
