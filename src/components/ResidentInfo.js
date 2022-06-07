@@ -7,7 +7,7 @@ const ResidentInfo = ({url}) => {
     useEffect(() => {
         axios.get(url)
         .then(res => setCharacter(res.data) )
-    }, []);
+    },[setCharacter, url]);
 
     return (
         <div className='Card'>
